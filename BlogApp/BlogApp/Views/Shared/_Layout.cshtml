@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <title>Document</title>
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+                <i class="bi bi-code-square"></i>
+        </a>
+            <ul class="navbar-nav ms-auto">
+                @if (User.Identity.IsAuthenticated)
+                {
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Posts" asp-action="List">Post List</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">@User.Identity.Name</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Users" asp-action="Logout">Logout</a>
+                        </li>
+                    
+                }
+                else
+                {
+
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Users" asp-action="Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Users" asp-action="Register">Register</a>
+                            </li>
+                        
+                       
+    
+                }
+
+            </ul>
+
+        </div>
+    </nav>
+  <div class="container mt-3">
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

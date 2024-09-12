@@ -1,0 +1,59 @@
+﻿
+<div class="row">
+    <div class="col-lg-8">
+        <div class="bg-white p-4">
+            <h1 class="h4 mb-4">@Model.Title</h1>
+            <div class="tags">
+
+                <a href="#">Web Geliştirme</a>
+                <a href="#">Microsoft</a>
+            </div>
+            <img src="~/img/@Model.Image" class="img-fluid rounded" alt="">
+            <div>@Html.Raw(@Model.Content)</div>
+        </div>
+        <div class="bg-white mt-3">
+            <div class="card border-0">
+                <div class="card-header pb-0">
+                    <h4><span id="commentCount">@Model.Comments.Count</span> adet yorum var.</h4>
+                </div>
+                <div class="card-body">
+                    @foreach (var comment in Model.Comments)
+                    {
+                        <div class="comment-container">
+                            <img src="~/img/@comment.User.Image" class="avatar-circle float-start me-3" alt="">
+                            <div>
+                            <div class="mb-2 d-flex">
+                                <h6 class="me-2">@comment.User.UserName</h6>
+                                <span>@comment.PublishedOn.ToString("d")</span>
+                                </div>
+                                <p>@comment.Text</p>
+
+        </div>
+        </div>
+        }
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                         <hr class="my-4" />
+                         <h4 class="mb-3">Yorum Ekle</h4>
+                    <form action="/posts/AddComment" method="post">
+                        <input type="hidden" name="PostId" value="@Model.PostId">
+                        <input type="hidden" name="Url" value="@Model.Url">
+
+                        <div class="mb-3">
+                            <label for="Text" class="form-label">Yorum</label>
+                            <textarea name="Text" id="Text" rows="3" class="form-control"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </form>
+
+                    }else{
+                        <p>Yorum yapabilmek için sisteme giriş yapmalısınız.<a href ="/users/login"> Login </a> </p>
+                    }
+                    
+</div>
+</div>
+</div>
+</div>

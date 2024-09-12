@@ -1,0 +1,71 @@
+﻿@model PostViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1 class="h4 mb-4">Popular Posts</h1>
+            @foreach (var post in Model.Posts)
+            {
+                <div class="post-card">
+                    <img src="~/img/@post.Image" alt="">
+                    <div class="post-content">
+                        <h5><a href="/posts/details/@post.Url">@post.Title</a></h5>
+                        <p>@post.Description</p>
+                    </div>
+                </div>
+            }
+
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar">
+            <div class="card">
+                <div class="card-header">
+                    Tags
+                </div>
+                <div class="card-body">
+                    <ul class="tag-list">
+                        @foreach (var tag in Model.Tags)
+                        {
+                            <li class="tag-item">
+                                <a href="/posts/tag/@tag.Url">@tag.Text</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">New Posts</h5>
+                </div>
+                <div class="card-body">
+                    @foreach (var post in Model.Posts)
+                    {
+                        <div class="mb-3">
+                            <h6 class="mb-0">
+                                <a href="/posts/details/@post.Url">
+                                    @post.Title
+                                </a>
+                            </h6>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

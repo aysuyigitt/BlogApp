@@ -1,0 +1,221 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    gap: 20px; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    padding: 20px;
+}
+
+.main-content {
+    flex: 3; 
+}
+
+.sidebar {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 500px;
+    max-height: 300px;
+}
+
+    .post-card img {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+.post-content {
+    padding: 15px;
+    flex: 1;
+}
+
+    .post-content h5 {
+        margin: 0 0 10px 0;
+    }
+
+    .post-content p {
+        margin: 0;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+    .pagination .page-item {
+        margin: 0 5px;
+    }
+.btn btn-warning {
+    border-radius: 0.25rem;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+}
+.pagination .page-link {
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.card-header {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tag-item {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    text-align: center;
+    white-space: nowrap;
+}
+
+    .tag-item a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.d-flex {
+    display: flex;
+    align-items: start;
+}
+.tags {
+    margin-bottom: 20px;
+}
+
+    .tags a {
+        text-decoration: none;
+        color: #007bff;
+        margin-right: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: black;
+        border: 1px solid #007bff;
+        font-size: 0.875rem;  Küçük yazı boyutu 
+    }
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.avatar{
+    width:100px;
+    height:100px;
+}
+.card {
+    border: none; 
+}
+
+.d-flex {
+    align-items: start; 
+}
+.avatar-circle {
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    background-color: #ddd; 
+}
+.mb-3 {
+    margin-right: 1rem; 
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem; 
+}
+h6 {
+    margin: 0; 
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+
+span {
+    font-size: 0.875rem; 
+    color: #666; /* Tarih rengi */
+}
+
+p {
+    margin-top: 0.5rem; 
+    font-size: 0.875rem;
+   
+}
+/* Yorumlar için Stil */
+
+/* Form Stili */
+.comment-container {
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+    max-width: 100%; 
+}
+form {
+    margin-top: 2rem; 
+}
+.form-label {
+    margin-bottom: 0.5rem; 
+}
+
+.form-control {
+    margin-bottom: 1rem; /* Giriş alanları arasına boşluk ekleme */
+}
+.btn-primary {
+    margin-top: 1rem; /* Butonun üstüne boşluk ekleme */
+}
+.mb3 {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0.875rem;
+    margin-bottom: 1rem;
+    width: 450px;
+}

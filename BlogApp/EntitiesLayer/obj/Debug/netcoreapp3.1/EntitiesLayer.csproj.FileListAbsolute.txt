@@ -1,0 +1,13 @@
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\bin\Debug\netcoreapp3.1\EntitiesLayer.deps.json
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\bin\Debug\netcoreapp3.1\EntitiesLayer.runtimeconfig.json
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\bin\Debug\netcoreapp3.1\EntitiesLayer.runtimeconfig.dev.json
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\bin\Debug\netcoreapp3.1\EntitiesLayer.dll
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\bin\Debug\netcoreapp3.1\EntitiesLayer.pdb
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.csproj.AssemblyReference.cache
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.AssemblyInfoInputs.cache
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.AssemblyInfo.cs
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.csproj.CoreCompileInputs.cache
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.dll
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.pdb
+C:\Users\AYSU YİĞİT\Source\Repos\BlogApp\EntitiesLayer\obj\Debug\netcoreapp3.1\EntitiesLayer.genruntimeconfig.cache
